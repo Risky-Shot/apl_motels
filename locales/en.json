@@ -1,0 +1,16 @@
+{
+    "error": {
+        "motel_already_rent": "You have already rented a motel.",
+        "no_room_motel": "This motel is full. Please check later.",
+        "rented": "Rental Failed",
+        "extend_failed": "Rental Extend Failed"
+    },
+    "success": {
+        "rented": "Rental Successful"
+    },
+    "inputs": {
+        "available_rooms": "Available Rooms",
+        "rental_period": "Rental Period",
+        "extend_period": "Extend Rental Period"
+    }
+}
