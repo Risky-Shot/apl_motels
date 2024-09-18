@@ -104,9 +104,9 @@ local function GetRoomData(roomId)
 end
 
 -- "0 * * * *" update every hour
-lib.cron.new("*0 * * * *", function()
+lib.cron.new("0 * * * *", function()
     UpdateMotels()
-end)
+end, {debug = false})
 
 -- Callback to fetch empty rooms in a motel
 lib.callback.register('apl_motels:server:getEmptyMotels', function(source, motelId)
