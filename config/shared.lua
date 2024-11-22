@@ -141,7 +141,7 @@ return {
                     roomId = "opium:room_02_01", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-694.9953, -2266.8650, 39.3964), -- Stash Open Coords
                         closet = vec3(-697.6282, -2267.4106, 39.3962), -- Closet Coords
                         manage = vec3(-697.3081, -2262.3376, 39.3963) -- Manage Panel Coords
@@ -151,7 +151,7 @@ return {
                     roomId = "opium:room_02_02", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-693.6661, -2251.3464, 39.3964), -- Stash Open Coords
                         closet = vec3(-691.0878, -2251.0525, 39.3962), -- Closet Coords
                         manage = vec3(-691.4592, -2256.2378, 39.3964) -- Manage Panel Coords
@@ -161,7 +161,7 @@ return {
                     roomId = "opium:room_02_03", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-685.2256, -2267.2251, 39.3964), -- Stash Open Coords
                         closet = vec3(-687.8805, -2267.3501, 39.3962), -- Closet Coords
                         manage = vec3(-687.5869, -2262.3501, 39.3964) -- Manage Panel Coords
@@ -171,7 +171,7 @@ return {
                     roomId = "opium:room_02_04", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-683.9737, -2251.3977, 39.3963), -- Stash Open Coords
                         closet = vec3(-681.3541, -2251.0413, 39.3962), -- Closet Coords
                         manage = vec3(-681.5989, -2256.1636, 39.3964) -- Manage Panel Coords
@@ -181,7 +181,7 @@ return {
                     roomId = "opium:room_02_05", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-675.5951, -2266.8557, 39.3964), -- Stash Open Coords
                         closet = vec3(-678.1630, -2267.5032, 39.3962), -- Closet Coords
                         manage = vec3(-677.8339, -2262.3169, 39.3964) -- Manage Panel Coords
@@ -191,7 +191,7 @@ return {
                     roomId = "opium:room_02_06", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-674.3085, -2251.4736, 39.3963), -- Stash Open Coords
                         closet = vec3(-671.6921, -2250.9485, 39.3962), -- Closet Coords
                         manage = vec3(-672.0353, -2256.1667, 39.3964) -- Manage Panel Coords
@@ -201,7 +201,7 @@ return {
                     roomId = "opium:room_02_07", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-747.1108, -2266.7771, 39.3964), -- Stash Open Coords
                         closet = vec3(-749.7150, -2267.3704, 39.3962), -- Closet Coords
                         manage = vec3(-749.4255, -2262.3677, 39.3964) -- Manage Panel Coords
@@ -211,7 +211,7 @@ return {
                     roomId = "opium:room_02_08", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-745.7385, -2251.5837, 39.3964), -- Stash Open Coords
                         closet = vec3(-743.1751, -2250.9968, 39.3962), -- Closet Coords
                         manage = vec3(-743.4568, -2256.1355, 39.3964) -- Manage Panel Coords
@@ -221,7 +221,7 @@ return {
                     roomId = "opium:room_02_09", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-756.8007, -2266.7710, 39.3963), -- Stash Open Coords
                         closet = vec3(-759.4273, -2267.3782, 39.3962), -- Closet Coords
                         manage = vec3(-759.1242, -2262.3230, 39.3964) -- Manage Panel Coords
@@ -231,7 +231,7 @@ return {
                     roomId = "opium:room_02_10", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-755.4489, -2251.6013, 39.3963), -- Stash Open Coords
                         closet = vec3(-752.8504, -2251.2449, 39.3962), -- Closet Coords
                         manage = vec3(-753.1182, -2256.1096, 39.3964) -- Manage Panel Coords
@@ -241,7 +241,7 @@ return {
                     roomId = "opium:room_02_11", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-766.4235, -2266.9709, 39.3964), -- Stash Open Coords
                         closet = vec3(-769.0836, -2267.4155, 39.3962), -- Closet Coords
                         manage = vec3(-768.6678, -2262.2756, 39.3963) -- Manage Panel Coords
@@ -251,7 +251,7 @@ return {
                     roomId = "opium:room_02_12", -- Must be Unique, Match DB and LockId
                     roomPrice = 1000, -- Per Day Rent
                     roomData = {
-                        spawn = vec4(-720.3113, -2288.0381, 39.3789, 1.0806), -- Spawn Selector Spawn Coords
+                        spawn = vec4(-720.1125, -2287.4395, 39.3306, 0.6429), -- Spawn Selector Spawn Coords
                         stash = vec3(-765.1474, -2251.4773, 39.3964), -- Stash Open Coords
                         closet = vec3(-762.4086, -2250.9431, 39.3962), -- Closet Coords
                         manage = vec3(-762.8463, -2256.1621, 39.3964) -- Manage Panel Coords
@@ -761,6 +761,10 @@ return {
     },
 
     fetchRoomNumberFromId = function(roomId)
-        return roomId:match("_(%d+)")
-    end
+    -- Match the pattern after the colon (:) and extract floor and room
+    local floor, room = roomId:match(":%w+_(%d+)_(%d+)")
+    
+    -- Return the extracted values as numbers
+    return 'Floor : '..floor..' | Room : '..room
+end
 }

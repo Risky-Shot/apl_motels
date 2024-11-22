@@ -280,3 +280,22 @@ exports.ox_inventory:registerHook('swapItems', function(payload)
         return false 
     end
 end)
+
+local query = [[
+    INSERT INTO `apl_motels` (`roomId`, `motelId`)
+        VALUES (?, ?)
+        ON DUPLICATE KEY UPDATE
+            `roomId` = VALUES(`roomId`),
+            `motelId` = VALUES(`motelId`)
+]]
+
+function SetupSQL()
+    for motelId, motelData in pairs(sharedConfig.motels) do
+        for roomIndex, roomData in pairs(motelData.rooms) do
+            Wait(1)
+            MySQL.query.await(query, {roomData.roomId, motelId})
+        end
+    end
+end
+
+SetupSQL()
