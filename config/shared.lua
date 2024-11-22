@@ -2,7 +2,7 @@ return {
     motels = {
         [1] = {
             name = "Opium Nights",
-            centerCoord = vec3(326.3893, -211.8089, 54.0863), -- Make Sure it's center of property or MLO building
+            centerCoord = vec3(-720.3113, -2288.0381, 48.2642), -- Make Sure it's center of property or MLO building
             blipData = {
                 coords = vec3(316.6376, -233.0067, 53.9667), -- Make Sure it's entrance area for better navigation
             },
