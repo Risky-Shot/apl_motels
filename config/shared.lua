@@ -4,10 +4,10 @@ return {
             name = "Opium Nights",
             centerCoord = vec3(-720.3113, -2288.0381, 48.2642), -- Make Sure it's center of property or MLO building
             blipData = {
-                coords = vec3(316.6376, -233.0067, 53.9667), -- Make Sure it's entrance area for better navigation
+                coords = vec3(-740.2034, -2279.0352, 13.0627), -- Make Sure it's entrance area for better navigation
             },
             reception = {
-                coords = vec4(324.9963, -229.7733, 54.2202, 166.4136),
+                coords = vec4(-719.9698, -2260.6248, 13.4524, 177.0432),
                 model = `U_M_Y_Ushi`,
                 ped = nil,
                 
