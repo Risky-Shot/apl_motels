@@ -290,12 +290,14 @@ local query = [[
 ]]
 
 function SetupSQL()
-    for motelId, motelData in pairs(sharedConfig.motels) do
-        for roomIndex, roomData in pairs(motelData.rooms) do
-            Wait(1)
-            MySQL.query.await(query, {roomData.roomId, motelId})
+    CreateThread(function()
+        for motelId, motelData in pairs(sharedConfig.motels) do
+            for roomIndex, roomData in pairs(motelData.rooms) do
+                Wait(1)
+                MySQL.query.await(query, {roomData.roomId, motelId})
+            end
         end
-    end
+    end)
 end
 
 SetupSQL()
