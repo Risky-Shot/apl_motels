@@ -40,6 +40,20 @@ end
 -- U should do a check and "return true" when money is deducted
 -- default return is false
 local function DeductMoney(source, amount)
+    local player  = exports.qbx_core:GetPlayer(source)
+    if not player or not player.PlayerData.citizenid then return false end
+
+    local citizenid = player.PlayerData.citizenid
+
+    local playerAccount = exports.ox_banking:GetCharacterAccount(citizenid)
+
+    if not playerAccount then return false end
+
+    local accountId = playerAccount.accountId
+
+    local response = exports.ox_banking:RemoveBalance(accountId, amount, "Motel Rental", false)
+
+    if response.success == true then return true end
 
     return false
 end
@@ -125,7 +139,7 @@ lib.callback.register('apl_motels:server:getEmptyMotels', function(source, motel
         local roomNo = sharedConfig.fetchRoomNumberFromId(roomId)
         local roomData = GetRoomData(roomId)
 
-        table.insert(motels, {value = tostring(roomId), label = "Room - "..tonumber(roomNo).." ($"..roomData.roomPrice..")"})
+        table.insert(motels, {value = tostring(roomId), label = roomNo.." | ($"..roomData.roomPrice..")"})
     end
 
     return motels
@@ -141,16 +155,25 @@ lib.callback.register('apl_motels:server:rentMotel', function(source, roomId, da
     end
 
     -- Server Side Check to check if player owns a motel
-    if DoesPlayerOwnAnyRoom(player.PlayerData.citizenid) then return false end
+    if DoesPlayerOwnAnyRoom(player.PlayerData.citizenid) then 
+        print('Player Already Own a motel room')
+        return false 
+    end
 
     local response = MySQL.query.await('SELECT `rented` FROM `apl_motels` WHERE `roomId` = ?', {roomId})
-    if not response and response[1].rented then return false end
+    if not response and response[1].rented then
+        print('Alread Rented') 
+        return false 
+    end
 
     -- Detuct Money from Bank/Character
     local roomData = GetRoomData(roomId)
     local hasPaid = DeductMoney(source, roomData.roomPrice * tonumber(days))
 
-    if not hasPaid then return false end
+    if not hasPaid then 
+        print('Failed to pay for motel')
+        return false 
+    end
 
     local expiry = os.time() + 86400 * tonumber(days) -- current time + rent duration in seconds
 
@@ -183,6 +206,22 @@ lib.callback.register('apl_motels:server:ownsAnyRoom', function(source, roomId)
     local owned = DoesPlayerOwnAnyRoom(player.PlayerData.citizenid)
 
     return owned
+end)
+
+lib.callback.register('apl_motels:server:getPlayerOwnedRoom', function(source)
+    local player = exports.qbx_core:GetPlayer(source) -- Get Player Data
+
+    local cid = player.PlayerData.citizenid
+    
+    local retval = nil
+
+    local roomId = MySQL.scalar.await('SELECT `roomId` FROM `apl_motels` WHERE `owner` = ? LIMIT 1', {
+        cid
+    })
+
+
+    retval = sharedConfig.fetchRoomNumberFromId(roomId)
+    return retval
 end)
 
 local function hasAccess(citizenId, roomId)

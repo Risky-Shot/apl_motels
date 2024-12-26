@@ -14,9 +14,6 @@
 
 
 -- Dumping database structure for qboxproject_d4a351
-CREATE DATABASE IF NOT EXISTS `qboxproject_d4a351` /*!40100 DEFAULT CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci */;
-USE `qboxproject_d4a351`;
-
 -- Dumping structure for table qboxproject_d4a351.apl_motels
 CREATE TABLE IF NOT EXISTS `apl_motels` (
   `id` int(11) NOT NULL AUTO_INCREMENT,

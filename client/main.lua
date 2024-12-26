@@ -269,7 +269,23 @@ local function setupMotels()
                     label = "Check Room No",
                     distance = 5,
                     onSelect = function()
-                        
+                        local room = lib.callback.await('apl_motels:server:getPlayerOwnedRoom', false)
+                        print('Room', room)
+                        if not room then 
+                            lib.notify({
+                                title = "Motel",
+                                type = "error",
+                                description = "No Room Rented."
+                            })
+                            return 
+                        end
+
+                        lib.notify({
+                            title = "Motel",
+                            type = "success",
+                            description = "Rented Room : "..room
+                        })
+
                     end
                 },
                 {

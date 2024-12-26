@@ -761,10 +761,10 @@ return {
     },
 
     fetchRoomNumberFromId = function(roomId)
-    -- Match the pattern after the colon (:) and extract floor and room
-    local floor, room = roomId:match(":%w+_(%d+)_(%d+)")
-    
-    -- Return the extracted values as numbers
-    return 'Floor : '..floor..' | Room : '..room
-end
+        -- Match the pattern after the colon (:) and extract floor and room
+        local floor, room = roomId:match(":%w+_(%d+)_(%d+)")
+        
+        -- Return the extracted values as numbers
+        return 'Floor : '..floor..' | Room : '..room
+    end
 }
