@@ -1,7 +1,7 @@
 return {
     motels = {
         [1] = {
-            name = "Opium Nights",
+            name = "Opium Nights Hotel",
             centerCoord = vec3(-720.3113, -2288.0381, 48.2642), -- Make Sure it's center of property or MLO building
             blipData = {
                 coords = vec3(-740.2034, -2279.0352, 13.0627), -- Make Sure it's entrance area for better navigation
@@ -739,6 +739,144 @@ return {
                         stash = vec3(-765.1474, -2251.4773, 74.6509), -- Stash Open Coords
                         closet = vec3(-762.4086, -2250.9431, 74.6509), -- Closet Coords
                         manage = vec3(-762.8463, -2256.1621, 74.6509) -- Manage Panel Coords
+                    }
+                },
+            }
+        },
+        [2] = {
+            name = "South Seas Motel",
+            centerCoord = vec3(-161.3410, 6420.4141, 36.8160), -- Make Sure it's center of property or MLO building
+            blipData = {
+                coords = vec3(-149.1464, 6433.0728, 31.9160), -- Make Sure it's entrance area for better navigation
+            },
+            reception = {
+                coords = vec4(-150.45257568359, 6425.4790039062, 31.914045333862, 313.2897),
+                model = `U_M_Y_Ushi`,
+                ped = nil,
+                
+            },
+            -- 6 floors 12 rooms each
+            -- motelName:room_floorNum_roomNum
+            rooms = {
+                -- First Floor
+                [1] = {
+                    roomId = "sseas:room_01_01", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-165.4269, 6440.5396, 31.9146, 317.9433), -- Spawn Selector Spawn Coords
+                        stash = vec3(-163.5278, 6438.4043, 31.9146), -- Stash Open Coords
+                        closet = vec3(-160.9471, 6443.5571, 31.9146), -- Closet Coords
+                        manage = vec3(-161.2357, 6439.9521, 31.9146) -- Manage Panel Coords
+                    }
+                },
+                [2] = {
+                    roomId = "sseas:room_01_02", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-159.0030, 6433.9243, 31.9155, 322.6914), -- Spawn Selector Spawn Coords
+                        stash = vec3(-161.1865, 6436.2061, 31.9155), -- Stash Open Coords
+                        closet = vec3(-155.9633, 6438.2803, 31.9155), -- Closet Coords
+                        manage = vec3(-159.5606, 6438.3447, 31.9155) -- Manage Panel Coords
+                    }
+                },
+                [3] = {
+                    roomId = "sseas:room_01_03", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-148.3772, 6423.6743, 31.9126, 308.9936), -- Spawn Selector Spawn Coords
+                        stash = vec3(-146.4091, 6421.2866, 31.9126), -- Stash Open Coords
+                        closet = vec3(-143.9971, 6426.5469, 31.9126), -- Closet Coords
+                        manage = vec3(-144.2566, 6422.9736, 31.9126) -- Manage Panel Coords
+                    }
+                },
+                [4] = {
+                    roomId = "sseas:room_01_04", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-148.8065, 6414.5850, 31.9126, 227.4691), -- Spawn Selector Spawn Coords
+                        stash = vec3(-151.4873, 6412.4272, 31.9126), -- Stash Open Coords
+                        closet = vec3(-146.2100, 6410.5186, 31.9126), -- Closet Coords
+                        manage = vec3(-149.6613, 6410.5078, 31.9126) -- Manage Panel Coords
+                    }
+                },
+                [5] = {
+                    roomId = "sseas:room_01_05", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-155.0855, 6407.9668, 31.9099, 228.3808), -- Spawn Selector Spawn Coords
+                        stash = vec3(-153.3619, 6410.4932, 31.9099), -- Stash Open Coords
+                        closet = vec3(-151.2528, 6405.3345, 31.9099), -- Closet Coords
+                        manage = vec3(-151.2651, 6408.8779, 31.9099) -- Manage Panel Coords
+                    }
+                },
+                [6] = {
+                    roomId = "sseas:room_01_06", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-166.2576, 6410.4907, 31.9147, 142.6559), -- Spawn Selector Spawn Coords
+                        stash = vec3(-163.5563, 6408.6489, 31.9147), -- Stash Open Coords
+                        closet = vec3(-168.9394, 6406.7134, 31.9147), -- Closet Coords
+                        manage = vec3(-165.6818, 6406.9995, 31.9147) -- Manage Panel Coords
+                    }
+                },
+                [7] = {
+                    roomId = "sseas:room_01_07", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-165.2232, 6440.6675, 36.1705, 314.9888), -- Spawn Selector Spawn Coords
+                        stash = vec3(-163.3815, 6438.2192, 36.1705), -- Stash Open Coords
+                        closet = vec3(-161.3796, 6443.0542, 36.1705), -- Closet Coords
+                        manage = vec3(-161.4850, 6440.2114, 36.1705) -- Manage Panel Coords
+                    }
+                },
+                [8] = {
+                    roomId = "sseas:room_01_08", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-158.6139, 6434.2646, 36.1739, 317.6125), -- Spawn Selector Spawn Coords
+                        stash = vec3(-161.3564, 6436.3345, 36.1739), -- Stash Open Coords
+                        closet = vec3(-156.1951, 6437.9697, 36.1739), -- Closet Coords
+                        manage = vec3(-159.1548, 6437.9263, 36.1739) -- Manage Panel Coords
+                    }
+                },
+                [9] = {
+                    roomId = "sseas:room_01_09", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-148.9306, 6424.3755, 36.1818, 318.8585), -- Spawn Selector Spawn Coords
+                        stash = vec3(-151.3153, 6426.3540, 36.1818), -- Stash Open Coords
+                        closet = vec3(-146.2442, 6428.2007, 36.1818), -- Closet Coords
+                        manage = vec3(-149.2308, 6427.9849, 36.1818) -- Manage Panel Coords
+                    }
+                },
+                [10] = {
+                    roomId = "sseas:room_01_10", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-148.7104, 6414.5308, 36.1682, 225.4420), -- Spawn Selector Spawn Coords
+                        stash = vec3(-151.3205, 6412.5679, 36.1682), -- Stash Open Coords
+                        closet = vec3(-146.6470, 6410.7808, 36.1682), -- Closet Coords
+                        manage = vec3(-149.2369, 6410.7524, 36.1682) -- Manage Panel Coords
+                    }
+                },
+                [11] = {
+                    roomId = "sseas:room_01_11", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-155.2922, 6407.9062, 36.1668, 228.2986), -- Spawn Selector Spawn Coords
+                        stash = vec3(-153.3349, 6410.5220, 36.1668), -- Stash Open Coords
+                        closet = vec3(-151.7599, 6405.6152, 36.1668), -- Closet Coords
+                        manage = vec3(-151.3083, 6408.8379, 36.1668) -- Manage Panel Coords
+                    }
+                },
+                [12] = {
+                    roomId = "sseas:room_01_12", -- Must be Unique, Match DB and LockId
+                    roomPrice = 1000, -- Per Day Rent
+                    roomData = {
+                        spawn = vec4(-164.2260, 6408.8838, 36.1489, 134.1814), -- Spawn Selector Spawn Coords
+                        stash = vec3(-166.2021, 6411.3687, 36.1489), -- Stash Open Coords
+                        closet = vec3(-168.2194, 6406.5049, 36.1489), -- Closet Coords
+                        manage = vec3(-168.1263, 6409.5352, 36.1489) -- Manage Panel Coords
                     }
                 },
             }

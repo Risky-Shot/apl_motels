@@ -139,7 +139,7 @@ lib.callback.register('apl_motels:server:getEmptyMotels', function(source, motel
         local roomNo = sharedConfig.fetchRoomNumberFromId(roomId)
         local roomData = GetRoomData(roomId)
 
-        table.insert(motels, {value = tostring(roomId), label = roomNo.." | ($"..roomData.roomPrice..")"})
+        table.insert(motels, {value = tostring(roomId), label = roomNo.." | ($"..roomData.roomPrice..") per day"})
     end
 
     return motels

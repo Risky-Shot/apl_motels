@@ -30,14 +30,14 @@ local function roomRentInput(motelId)
         {
             type = "select", 
             label = locale('inputs.available_rooms'), 
-            icon = "person-shelter",
+            icon = "fa-solid fa-person-shelter",
             options = availableRooms, 
             required = true, clearable = false, searchable = true
         },
         {
             type = "select", 
             label = locale('inputs.rental_period'), 
-            icon = "calendar",
+            icon = "fa-solid fa-calendar",
             options = sharedConfig.rentDays, 
             default = sharedConfig.rentDays[1].value,
             required = true, clearable = false, searchable = true
@@ -168,6 +168,7 @@ local function setupRooms(motelId)
             lib.showTextUI('[E] Access Stash', {
                 position = 'right-center'
             })
+            print('Near Stash')
         end
 
         function stashPoint:onExit()
@@ -192,7 +193,7 @@ local function setupRooms(motelId)
         })
 
         function closetPoint:onEnter()
-            lib.showTextUI('[E] Change Cloths', {
+            lib.showTextUI('[E] Change Clothes', {
                 position = 'right-center'
             })
         end
@@ -258,6 +259,7 @@ local function setupMotels()
                 {
                     label = "Rent",
                     distance = 5,
+                    icon = 'fa-solid fa-person-shelter',
                     onSelect = function()
                         roomRentInput(k)
                     end,
@@ -268,6 +270,7 @@ local function setupMotels()
                 {
                     label = "Check Room No",
                     distance = 5,
+                    icon = 'fa-solid fa-question',
                     onSelect = function()
                         local room = lib.callback.await('apl_motels:server:getPlayerOwnedRoom', false)
                         print('Room', room)
@@ -291,6 +294,7 @@ local function setupMotels()
                 {
                     label = "Collect Stuff",
                     distance = 5,
+                    icon = 'fa-solid fa-boxes-packing',
                     onSelect = function()
                         local owns = lib.callback.await('apl_motels:server:ownsAnyRoom', false)
                         if owns then
